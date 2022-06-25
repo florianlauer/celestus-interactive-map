@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import styled from 'styled-components'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -14,11 +15,11 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="https://nextjs.org">Next.js!!!</a>
         </h1>
-
+        <TextExample>Coucou!</TextExample>
         <p className={styles.description}>
-          Get started by editing{' '}
+          Get started by editing lol{' '}s
           <code className={styles.code}>pages/index.tsx</code>
         </p>
 
@@ -69,4 +70,9 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default Home;
+
+const TextExample = styled.div`
+  color: red;
+  font-size: 25px;
+`
